@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <style>
+	html, body {
+		font-family: "Red Hat Display", sans-serif;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	main {
+		border: 2px solid black;
+		/*border-radius: 25px;*/
+		width: 352px;
+		margin: 100px auto 0;
+	}
+	
+	#banner {
+		/*border-radius: 10px 10px;*/
+		
+	}
+	
+	h2 {
+		text-align: center;
+		font-weight: 900;
+	}
+	
+	#byline {
+		text-align: center;
+		color: hsl(224, 23%, 55%);
+	}
+	
+	#plan {
+		
+		border: 2px solid blue;
+		line-height: 1.2px;
+		width: 175px;
+		margin-left: 75px;
+	}
+	
+	
+	#note_logo {
+		border: 1px solid black;
+
+	}
+	
+	#plan_name {
+		font-weight: 700;
+		margin-left: 50px;
+		border: 1px solid blue;
+	
+	}
+	
+	#price {
+		color: hsl(224, 23%, 55%);
+		margin-left: 50px;
+		margin-bottom: 50px;
+		border: 1px solid blue;
+	}
+	
+	#change_plan {
+		border: 1px solid black;
+		
+	}
+	
+	#buttons {
+		display: block;
+		justify-content: center;
+	}
+	
+	#proceed_button, #cancel_button {
+		border: 2px solid red;
+		padding: 5px 25px 5px 25px;
+		margin-left: 80px;
+	}
+	
+	#cancel_button {
+		margin-left: 105px;
+	}
+	
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+	<main>
+		<img src="images/illustration-hero.svg" alt="Jamming to the music" id="banner" length="176px" width="352px">
+		<h2>Order Summary</h2>
+
+		<p id="byline">You can now listen to millions of songs, audiobooks, and podcasts on any 
+		device anywhere you like!</p>
+		
+
+		
+		
+		<div id="plan">
+			<img src="images/icon-music.svg" alt="Music" id="note_logo" length="36px" width="36px">
+			<p id="plan_name">Annual Plan</p>
+			<p id="price">$59.99/year</p>
+			<p><a href="#change" id="change_plan">Change</a></p>
+		</div>
+		
+			
+
+		<div id="buttons">	
+			<p><a href="#proceed" id="proceed_button">Proceed to Payment</a></p>
+			<p><a href="#cancel" id="cancel_button">Cancel Order</a></p>
+		</div>	
+    </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Spencer Quintana</a>.
+  </div>
+
+</body>
+</html>
