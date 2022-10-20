@@ -14,20 +14,21 @@
 		font-family: "Red Hat Display", sans-serif;
 	}
 	
-	a {
-		text-decoration: none;
+	body {
+		background-image: url("images/pattern-background-desktop.svg");
+		background-repeat: no-repeat;
+		background-color: hsl(225, 100%, 94%);
 	}
 	
 	main {
-		border: 2px solid black;
-		/*border-radius: 25px;*/
+		border-radius: 25px;
 		width: 352px;
-		margin: 100px auto 0;
+		margin: 50px auto 0;
+		background-color: white;
 	}
 	
 	#banner {
-		/*border-radius: 10px 10px;*/
-		
+		border-radius: 25px 25px 0px 0px;
 	}
 	
 	h2 {
@@ -38,39 +39,53 @@
 	#byline {
 		text-align: center;
 		color: hsl(224, 23%, 55%);
+		font-size: 13px;
+		margin: 0px 35px 5px 35px;
+		font-weight: 500;
+		line-height: 1.6;
 	}
 	
 	#plan {
-		
-		border: 2px solid blue;
-		line-height: 1.2px;
-		width: 175px;
-		margin-left: 75px;
+		display: inline-block;
+		line-height: 0.5;
+		width: 270px;
+		height: 100px;
+		background-color: hsl(225, 100%, 98%);
+		margin-left: 40px;
+		border-radius: 10px;
 	}
 	
+	#plan_name {
+		display: inline;
+	}
 	
 	#note_logo {
-		border: 1px solid black;
-
+		margin-left: 15px;
 	}
 	
 	#plan_name {
 		font-weight: 700;
-		margin-left: 50px;
-		border: 1px solid blue;
-	
+		margin-left: 5px;
+		font-size: 14px;
 	}
 	
 	#price {
 		color: hsl(224, 23%, 55%);
-		margin-left: 50px;
-		margin-bottom: 50px;
-		border: 1px solid blue;
+		margin-left: 60px;
+		margin-bottom: 60px;
+		font-size: 14px;
 	}
 	
 	#change_plan {
-		border: 1px solid black;
-		
+		padding: 10px;
+		font-weight: 600;
+		font-size: 12px;
+		color: hsl(245, 75%, 52%);
+	}
+	
+	#change_plan:hover {
+		text-decoration: none;
+		color: hsl(245, 75%, 70%);
 	}
 	
 	#buttons {
@@ -78,14 +93,32 @@
 		justify-content: center;
 	}
 	
-	#proceed_button, #cancel_button {
-		border: 2px solid red;
-		padding: 5px 25px 5px 25px;
-		margin-left: 80px;
+	#proceed_button {
+		background-color: hsl(245, 75%, 52%);
+		color: white;
+		padding: 12px 75px 12px 75px;
+		font-size: 12px;
+		font-weight: 600;
+		margin-left: 45px;
+		border-radius: 10px;
+		text-decoration: none;
+	}
+	
+	#proceed_button:hover {
+		background-color: hsl(245, 75%, 70%);
 	}
 	
 	#cancel_button {
-		margin-left: 105px;
+		margin-left: 185px;
+		font-size: 12px;
+		font-weight: 600;
+		margin-left: 140px;
+		text-decoration: none;
+		color: hsl(224, 23%, 55%);
+	}
+	
+	#cancel_button:hover {
+		color: hsl(223, 47%, 23%);
 	}
 	
     .attribution { font-size: 11px; text-align: center; }
@@ -94,24 +127,19 @@
 </head>
 <body>
 	<main>
-		<img src="images/illustration-hero.svg" alt="Jamming to the music" id="banner" length="176px" width="352px">
+		<img src="images/illustration-hero.svg" alt="Jamming to the music" id="banner" length="176px" width="354px">
 		<h2>Order Summary</h2>
 
 		<p id="byline">You can now listen to millions of songs, audiobooks, and podcasts on any 
 		device anywhere you like!</p>
 		
-
-		
-		
 		<div id="plan">
 			<img src="images/icon-music.svg" alt="Music" id="note_logo" length="36px" width="36px">
 			<p id="plan_name">Annual Plan</p>
 			<p id="price">$59.99/year</p>
-			<p><a href="#change" id="change_plan">Change</a></p>
+			<a href="#change" id="change_plan">Change</a>
 		</div>
-		
 			
-
 		<div id="buttons">	
 			<p><a href="#proceed" id="proceed_button">Proceed to Payment</a></p>
 			<p><a href="#cancel" id="cancel_button">Cancel Order</a></p>
