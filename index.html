@@ -12,84 +12,117 @@
   <style>
 	html, body {
 		font-family: "Red Hat Display", sans-serif;
+		overflow: auto;
+	}
+	
+	body {
+		background-image: url("images/pattern-background-desktop.svg");
+		background-repeat: no-repeat;
+		background-color: hsl(225, 100%, 94%);
 	}
 	
 	main {
-		width: 300px;
-		margin: 100px auto;
-		border: 1px solid black;
-		padding: 25px;
+		width: 350px;
+		margin: 100px auto 0px auto;
+		border: 1px hidden;
+		border-radius: 15px;
+		padding-bottom: 15px;
+		background-color: white;
+	}
+	
+	#banner {
+		border-radius: 15px 15px 0px 0px;
 	}
 	
 	h1 {
 		font-size: 21px;
 		font-weight: 900;
 		text-align: center;
+		padding-top: 15px
 	}
 	
 	#byline {
-		font-size: 14px;
+		font-size: 13px;
 		text-align: center;
 		line-height: 1.6;
+		color: hsl(224, 23%, 55%);
+		margin: auto 35px auto 35px;
 	}
 	
 	#plan {
 		display: flex;
+		width: 270px;
 		justify-content: center;
-		/*margin-right: 15px;*/
-		border: 1px solid black;
-		margin: 15px auto 35px auto;
-		padding: 15px auto 15px auto;
+		align-content: center;
+		border: 1px hidden;
+		border-radius: 10px;
+		background-color: hsl(225, 100%, 98%);
+		margin: 15px auto 35px auto;	
 	}
 	
 	#music_icon {
 		align-self: center;
-		
 	}
 	
 	#plan_text {
 		line-height: 0.6;
-		margin: 0px 75px 0px 15px;
-		border: 1px solid black;
+		margin: 0px 60px 10px 15px;
+		padding-top: 10px;	
 	}
 	
 	#plan_name {
 		font-weight: bold;
 		font-size: 13px;
+		color: hsl(223, 47%, 23%);
 	}
 	
 	#plan_price {
-		height: auto;
-		width: auto;
 		font-size: 13px;
+		color: hsl(224, 23%, 55%);
 	}
 	
 	#change_btn {
-		margin-top: 20px;
+		margin-top: 30px;
 		font-size: 12px;
 		font-weight: 700;
+		color: hsl(245, 75%, 52%);
+	}
+	
+	#change_btn:hover {
+		color: hsl(245, 75%, 70%);
+		text-decoration: none;
 	}
 	
 	#buttons {
-		/*display: block;
-		justify-content: center;*/
 		font-size: 12px;
 		font-weight: 700;
-		margin-top: 25px;
 	}
 	
 	#proceed_btn {
 		text-decoration: none;
-		border: 1px solid black;
-		padding: 10px 75px 10px 75px;
-		margin-left: 20px;
-		
+		border: 1px hidden;
+		border-radius: 10px;
+		padding: 13px 80px 13px 75px;
+		margin: 1px 0px 1px 41px;
+		color: white;
+		background-color: hsl(245, 75%, 52%);
+	}
+	
+	#proceed_btn:hover {
+		background-color: hsl(245, 75%, 70%);
 	}
 	
 	#cancel_btn {
+		padding-top: 15px;
+		margin: 25px 0 25px 137px;
+	}
+	
+	#cancel_link {
+		color: hsl(224, 23%, 55%);
 		text-decoration: none;
-		margin-left: 95px;
-		padding-top: 150px;
+	}
+	#cancel_link:hover {
+		color: hsl(223, 47%, 23%);
 	}
 	
     .attribution { font-size: 11px; text-align: center; }
@@ -98,7 +131,7 @@
 </head>
 <body>
 <main>
-	<img src="images/illustration-hero.svg" id="banner" length="" width="">
+	<img src="images/illustration-hero.svg" id="banner" length="147px" width="350px">
 	<h1>Order Summary</h1>
 
 	<p id="byline">You can now listen to millions of songs, audiobooks, and podcasts on any 
@@ -115,7 +148,7 @@
 	
 	<div id="buttons">
 		<a href="#proceed" id="proceed_btn">Proceed to Payment</a>
-		<p><a href="#cancel" id="cancel_btn">Cancel Order</a></p>
+		<p id="cancel_btn"><a href="#cancel" id="cancel_link">Cancel Order</a></p>
 	</div>
  </main> 
   <div class="attribution">
