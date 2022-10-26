@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
@@ -14,111 +14,82 @@
 		font-family: "Red Hat Display", sans-serif;
 	}
 	
-	body {
-		background-image: url("images/pattern-background-desktop.svg");
-		background-repeat: no-repeat;
-		background-color: hsl(225, 100%, 94%);
-	}
-	
 	main {
-		border-radius: 25px;
-		width: 352px;
-		margin: 50px auto 0;
-		background-color: white;
+		width: 300px;
+		margin: 100px auto;
+		border: 1px solid black;
+		padding: 25px;
 	}
 	
-	#banner {
-		border-radius: 25px 25px 0px 0px;
-	}
-	
-	h2 {
-		text-align: center;
+	h1 {
+		font-size: 21px;
 		font-weight: 900;
+		text-align: center;
 	}
 	
 	#byline {
+		font-size: 14px;
 		text-align: center;
-		color: hsl(224, 23%, 55%);
-		font-size: 13px;
-		margin: 0px 35px 5px 35px;
-		font-weight: 500;
 		line-height: 1.6;
 	}
 	
 	#plan {
-		display: inline-block;
-		line-height: 0.5;
-		width: 270px;
-		height: 100px;
-		background-color: hsl(225, 100%, 98%);
-		margin-left: 40px;
-		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		/*margin-right: 15px;*/
+		border: 1px solid black;
+		margin: 15px auto 35px auto;
+		padding: 15px auto 15px auto;
+	}
+	
+	#music_icon {
+		align-self: center;
+		
+	}
+	
+	#plan_text {
+		line-height: 0.6;
+		margin: 0px 75px 0px 15px;
+		border: 1px solid black;
 	}
 	
 	#plan_name {
-		display: inline;
+		font-weight: bold;
+		font-size: 13px;
 	}
 	
-	#note_logo {
-		margin-left: 15px;
+	#plan_price {
+		height: auto;
+		width: auto;
+		font-size: 13px;
 	}
 	
-	#plan_name {
-		font-weight: 700;
-		margin-left: 5px;
-		font-size: 14px;
-	}
-	
-	#price {
-		color: hsl(224, 23%, 55%);
-		margin-left: 60px;
-		margin-bottom: 60px;
-		font-size: 14px;
-	}
-	
-	#change_plan {
-		padding: 10px;
-		font-weight: 600;
+	#change_btn {
+		margin-top: 20px;
 		font-size: 12px;
-		color: hsl(245, 75%, 52%);
-	}
-	
-	#change_plan:hover {
-		text-decoration: none;
-		color: hsl(245, 75%, 70%);
+		font-weight: 700;
 	}
 	
 	#buttons {
-		display: block;
-		justify-content: center;
-	}
-	
-	#proceed_button {
-		background-color: hsl(245, 75%, 52%);
-		color: white;
-		padding: 12px 75px 12px 75px;
+		/*display: block;
+		justify-content: center;*/
 		font-size: 12px;
-		font-weight: 600;
-		margin-left: 45px;
-		border-radius: 10px;
+		font-weight: 700;
+		margin-top: 25px;
+	}
+	
+	#proceed_btn {
 		text-decoration: none;
+		border: 1px solid black;
+		padding: 10px 75px 10px 75px;
+		margin-left: 20px;
+		
 	}
 	
-	#proceed_button:hover {
-		background-color: hsl(245, 75%, 70%);
-	}
-	
-	#cancel_button {
-		margin-left: 185px;
-		font-size: 12px;
-		font-weight: 600;
-		margin-left: 140px;
+	#cancel_btn {
 		text-decoration: none;
-		color: hsl(224, 23%, 55%);
-	}
-	
-	#cancel_button:hover {
-		color: hsl(223, 47%, 23%);
+		margin-left: 95px;
+		padding-top: 150px;
 	}
 	
     .attribution { font-size: 11px; text-align: center; }
@@ -126,29 +97,30 @@
   </style>
 </head>
 <body>
-	<main>
-		<img src="images/illustration-hero.svg" alt="Jamming to the music" id="banner" length="176px" width="354px">
-		<h2>Order Summary</h2>
+<main>
+	<img src="images/illustration-hero.svg" id="banner" length="" width="">
+	<h1>Order Summary</h1>
 
-		<p id="byline">You can now listen to millions of songs, audiobooks, and podcasts on any 
-		device anywhere you like!</p>
-		
-		<div id="plan">
-			<img src="images/icon-music.svg" alt="Music" id="note_logo" length="36px" width="36px">
-			<p id="plan_name">Annual Plan</p>
-			<p id="price">$59.99/year</p>
-			<a href="#change" id="change_plan">Change</a>
+	<p id="byline">You can now listen to millions of songs, audiobooks, and podcasts on any 
+	device anywhere you like!</p>
+
+	<div id="plan">
+		<img src="images/icon-music.svg" id="music_icon" length="36" width="36">
+		<div id="plan_text">
+			<p id ="plan_name">Annual Plan</p>
+			<p id="plan_price">$59.99/year</p>
 		</div>
-			
-		<div id="buttons">	
-			<p><a href="#proceed" id="proceed_button">Proceed to Payment</a></p>
-			<p><a href="#cancel" id="cancel_button">Cancel Order</a></p>
-		</div>	
-    </main>
+		<a href="#change" id="change_btn">Change</a>
+	</div>
+	
+	<div id="buttons">
+		<a href="#proceed" id="proceed_btn">Proceed to Payment</a>
+		<p><a href="#cancel" id="cancel_btn">Cancel Order</a></p>
+	</div>
+ </main> 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Spencer Quintana</a>.
   </div>
-
 </body>
 </html>
